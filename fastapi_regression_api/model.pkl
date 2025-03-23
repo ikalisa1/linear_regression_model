@@ -1,1 +1,9 @@
-model
+import joblib
+from sklearn.linear_model import LinearRegression
+
+# Assuming you have trained your model as 'model'
+model = LinearRegression()
+model.fit(X_train, y_train)  # Replace with your actual training code
+
+# Save the model
+joblib.dump(model, 'model.pk1')
